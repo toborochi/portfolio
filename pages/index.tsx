@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>{"Toborochi's Portfolio"}</title>
         <meta name="description" content="Just Another Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${process.env.FAVICON}/favicon.ico`} />
       </Head>
       <header className={styles.header_portfolio}>
         
@@ -28,14 +28,14 @@ export default function Home() {
         </section>
         
         <section className={styles.language_box}>
-          <div className={styles["circular--portrait"]}> <Image alt=""  src="/us.svg"/> </div>
-          <div className={styles["circular--portrait"]}> <Image alt=""  src="/bo.svg"/> </div>
+          <div className={styles["circular--portrait"]}> <Image alt=""  src={`${process.env.FAVICON}/us.svg"`}/> </div>
+          <div className={styles["circular--portrait"]}> <Image alt=""  src={`${process.env.FAVICON}/bo.svg"`} /> </div>
         </section>
       </header>
 
       <footer className={styles.footer_portfolio }>
-      <a href="https://github.com/toborochi" target="_blank" rel="noreferrer" > <Image alt="" className={styles.footer_icon}  src="/github.svg"/> </a>
-      <a href="https://www.linkedin.com/in/leonardoav/" target="_blank" rel="noreferrer"> <Image alt="" className={styles.footer_icon} src="/icons8-linkedin-50.svg"/> </a>
+      <a href="https://github.com/toborochi" target="_blank" rel="noreferrer" > <Image alt="" className={styles.footer_icon}  src={`${process.env.FAVICON}/github.svg`}/> </a>
+      <a href="https://www.linkedin.com/in/leonardoav/" target="_blank" rel="noreferrer"> <Image alt="" className={styles.footer_icon} src={`${process.env.FAVICON}/icons8-linkedin-50.svg`}/> </a>
       </footer>
 
       <div className={styles.container_name}>
