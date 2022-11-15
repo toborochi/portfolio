@@ -33,8 +33,8 @@ export default function Home() {
       </header>
 
       <footer className={styles.footer_portfolio }>
-      <div > <img className={styles.footer_icon}  src="/github.svg"/> </div>
-      <div > <img className={styles.footer_icon} src="/icons8-linkedin-50.svg"/> </div>
+      <a href="https://github.com/toborochi" target="_blank" > <img className={styles.footer_icon}  src="/github.svg"/> </a>
+      <a href="https://www.linkedin.com/in/leonardoav/" target="_blank" > <img target="_blank" className={styles.footer_icon} src="/icons8-linkedin-50.svg"/> </a>
       </footer>
 
       <div className={styles.container_name}>
