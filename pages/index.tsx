@@ -28,8 +28,8 @@ export default function Home() {
         </section>
         
         <section className={styles.language_box}>
-          <div className={styles["circular--portrait"]}> <Image alt=""  src={`${process.env.FAVICON}/us.svg"`}/> </div>
-          <div className={styles["circular--portrait"]}> <Image alt=""  src={`${process.env.FAVICON}/bo.svg"`} /> </div>
+          <div className={styles["circular--portrait"]}> <Image alt=""  src={`${process.env.FAVICON}/us.svg`}/> </div>
+          <div className={styles["circular--portrait"]}> <Image alt=""  src={`${process.env.FAVICON}/bo.svg`} /> </div>
         </section>
       </header>
 
