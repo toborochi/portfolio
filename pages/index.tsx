@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Manrope } from '@next/font/google'
+import Image from 'next/image'
 
 const manrope = Manrope({
   weight: '800'
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Toborochi's Portfolio</title>
+        <title>{"Toborochi's Portfolio"}</title>
         <meta name="description" content="Just Another Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,14 +28,14 @@ export default function Home() {
         </section>
         
         <section className={styles.language_box}>
-          <div className={styles["circular--portrait"]}> <img src="/us.svg"/> </div>
-          <div className={styles["circular--portrait"]}> <img src="/bo.svg"/> </div>
+          <div className={styles["circular--portrait"]}> <Image alt=""  src="/us.svg"/> </div>
+          <div className={styles["circular--portrait"]}> <Image alt=""  src="/bo.svg"/> </div>
         </section>
       </header>
 
       <footer className={styles.footer_portfolio }>
-      <a href="https://github.com/toborochi" target="_blank" > <img className={styles.footer_icon}  src="/github.svg"/> </a>
-      <a href="https://www.linkedin.com/in/leonardoav/" target="_blank" > <img target="_blank" className={styles.footer_icon} src="/icons8-linkedin-50.svg"/> </a>
+      <a href="https://github.com/toborochi" target="_blank" rel="noreferrer" > <Image alt="" className={styles.footer_icon}  src="/github.svg"/> </a>
+      <a href="https://www.linkedin.com/in/leonardoav/" target="_blank" rel="noreferrer"> <Image alt="" className={styles.footer_icon} src="/icons8-linkedin-50.svg"/> </a>
       </footer>
 
       <div className={styles.container_name}>
@@ -42,7 +43,7 @@ export default function Home() {
         <div className={`${styles.me}`}>
           <div className={`${styles.me_text} ${manropeRegular.className}` }  >Hi, my name is</div>
           <div className={`${styles.me_main} ${manrope.className}`  }>Leonardo</div>
-          <div className={`${styles.me_aka} ${manropeRegular.className}`}  >(a.k.a. <b>toborochi</b>  )</div>
+          <div className={`${styles.me_aka} ${manropeRegular.className}`}  >(<b>toborochi</b>)</div>
         </div>
       </div>
     </div>
